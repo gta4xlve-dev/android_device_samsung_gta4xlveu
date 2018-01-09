@@ -1,6 +1,16 @@
 # eBPF
 ro.bpf.kver_override=5.4.299
 
+# LMKD
+ro.lmk.low=1001
+ro.lmk.medium=0
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.upgrade_pressure=100
+ro.lmk.downgrade_pressure=100
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+
 # Set supported Bluetooth profiles to enabled
 bluetooth.profile.asha.central.enabled=true
 bluetooth.profile.a2dp.source.enabled=true
