@@ -141,6 +141,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Properties
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/properties/odm_SM-P613.prop:$(TARGET_COPY_OUT_ODM)/etc/build_SM-P613.prop \
