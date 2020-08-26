@@ -57,7 +57,7 @@
       "Values": [
         "0",
         "3",
-        "7"
+        "5"
       ],
       "ResetOnInit": true
     },
@@ -140,7 +140,7 @@
         "14236",
         "9155",
         "7110",
-        "4577"
+        "2288"
       ],
       "ResetOnInit": true
     },
@@ -148,9 +148,9 @@
       "Name": "LLCCBWMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
       "Values": [
-        "6881",
-        "2597",
-        "762"
+        "8137",
+        "2929",
+        "1144"
       ],
       "ResetOnInit": true
     },
@@ -158,7 +158,7 @@
       "Name": "L3LittleClusterMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/min_freq",
       "Values": [
-        "1459200000",
+        "1401000000",
         "300000000"
       ],
       "ResetOnInit": true
@@ -167,7 +167,7 @@
       "Name": "L3BigClusterMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu6-cpu-l3-lat/min_freq",
       "Values": [
-        "1459200000",
+        "1459000000",
         "300000000"
       ],
       "ResetOnInit": true
@@ -176,8 +176,8 @@
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
-        "44",
-        "100"
+        "0x00000043",
+        "0x00000064"
       ],
       "HoldFd": true
     },
@@ -289,7 +289,7 @@
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
-      "Value": "2597"
+      "Value": "2929"
     },
     {
       "PowerHint": "LAUNCH",
@@ -319,7 +319,7 @@
       "PowerHint": "LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 5000,
-      "Value": "44"
+      "Value": "0x00000043"
     },
     {
       "PowerHint": "LAUNCH",
@@ -367,25 +367,25 @@
       "PowerHint": "LAUNCH",
       "Node": "LLCCBWMinFreq",
       "Duration": 5000,
-      "Value": "6881"
+      "Value": "8137"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3LittleClusterMinFreq",
       "Duration": 5000,
-      "Value": "1459200000"
+      "Value": "1401000000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3BigClusterMinFreq",
       "Duration": 5000,
-      "Value": "1459200000"
+      "Value": "1459000000"
     },
     {
       "PowerHint": "AUDIO_STREAMING",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
-      "Value": "44"
+      "Value": "0x00000043"
     },
     {
       "PowerHint": "AUDIO_LOW_LATENCY",
@@ -397,7 +397,7 @@
       "PowerHint": "AUDIO_LOW_LATENCY",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 0,
-      "Value": "44"
+      "Value": "0x00000043"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
