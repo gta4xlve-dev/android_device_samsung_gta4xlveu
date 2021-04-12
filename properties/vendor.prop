@@ -169,7 +169,6 @@ ro.oem_unlock_supported=1
 
 # Radio
 persist.vendor.radio.enableadvancedscan=true
-ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=false
 
 # Security
