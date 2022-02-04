@@ -115,6 +115,7 @@ include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # System properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Verified Boot
