@@ -58,6 +58,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
 
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
