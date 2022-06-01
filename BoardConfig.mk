@@ -27,6 +27,14 @@ TARGET_USES_QCOM_MM_AUDIO := true
 TARGET_BOOTLOADER_BOARD_NAME := atoll
 TARGET_NO_BOOTLOADER := true
 
+# Dexpreopt
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= false
+    WITH_DEXPREOPT := true
+  endif
+endif
+
 # Display
 TARGET_SCREEN_DENSITY := 240
 TARGET_USES_HWC2 := true
