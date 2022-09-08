@@ -52,6 +52,7 @@ TARGET_KERNEL_CONFIG := vendor/gta4xlve_eur_open_defconfig
 
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Media
 TARGET_USES_ION := true
