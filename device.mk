@@ -14,6 +14,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Properties
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/properties/odm_SM-P613.prop:$(TARGET_COPY_OUT_ODM)/etc/build_SM-P613.prop \
