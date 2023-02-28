@@ -92,6 +92,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
 
+# Sepolicy
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+
 # System properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
