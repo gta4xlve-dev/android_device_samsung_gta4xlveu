@@ -1,0 +1,10 @@
+# Device
+ro.product.odm.model=SM-P619
+
+# Radio
+persist.vendor.cne.feature=0
+persist.vendor.radio.atfwd.start=true
+ro.radio.noril=no
+ro.telephony.default_cdma_sub=0
+ro.vendor.epdg.support=true
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so

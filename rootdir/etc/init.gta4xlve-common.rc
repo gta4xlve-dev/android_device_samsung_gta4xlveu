@@ -99,3 +99,6 @@ on post-fs-data
     chown system system /data/vendor
     mkdir /data/vendor/gps 0771 system system
     chown system system /data/vendor/gps
+
+on early-init
+    setprop ro.boot.product.hardware.sku ${ro.boot.em.model}

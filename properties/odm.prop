@@ -1,0 +1,4 @@
+ro.vendor.qti.va_odm.support=1
+
+# SKUs
+import /odm/etc/build_${ro.boot.em.model}.prop
