@@ -1,0 +1,70 @@
+<manifest version="2.0" type="device" target-level="5">
+    <hal format="hidl" override="true">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.5::IRadio/slot1</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.radio.config</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::IRadioConfig/default</fqname>
+     </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.samsung.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>2.2</version>
+        <interface>
+            <name>ISehRadio</name>
+            <instance>slot1</instance>
+        </interface>
+        <fqname>@2.2::ISehRadio/slot1</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.samsung.hardware.radio.bridge</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehBridge</name>
+            <instance>slot1</instance>
+        </interface>
+        <fqname>@2.0::ISehBridge/slot1</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.samsung.hardware.radio.channel</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehChannel</name>
+            <instance>epdgd</instance>
+            <instance>imsd</instance>
+        </interface>
+        <fqname>@2.0::ISehChannel/epdgd</fqname>
+        <fqname>@2.0::ISehChannel/imsd</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.tetheroffload.config</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOffloadConfig</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IOffloadConfig/default</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.tetheroffload.control</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOffloadControl</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IOffloadControl/default</fqname>
+    </hal>
+</manifest>

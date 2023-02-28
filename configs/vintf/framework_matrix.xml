@@ -1,0 +1,390 @@
+<compatibility-matrix version="4.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.display.color</name>
+        <version>1.0-3</version>
+        <interface>
+            <name>IDisplayColor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.display.config</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDisplayConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.display.postproc</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayPostproc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.audiohalext</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAudioHalExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.cacert</name>
+        <version>1.0</version>
+        <interface>
+            <name>IService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.capabilityconfigstore</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICapabilityConfigStore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.cryptfshw</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICryptfsHw</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.display.allocator</name>
+        <version>3.0</version>
+        <version>4.0</version>
+        <interface>
+            <name>IQtiAllocator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.display.mapper</name>
+        <version>3.0</version>
+        <version>4.0</version>
+        <interface>
+            <name>IQtiMapper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.dsp</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDspService</name>
+            <instance>dspservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.fm</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFmHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.iop</name>
+        <version>2.0</version>
+        <interface>
+            <name>IIop</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.perf</name>
+        <version>2.0-2</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.qseecom</name>
+        <version>1.0</version>
+        <interface>
+            <name>IQSEECom</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.tui_comm</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITuiComm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifi.wifilearner</name>
+        <version>1.0</version>
+        <interface>
+            <name>IWifiStats</name>
+            <instance>wifiStats</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.audio</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehDevicesFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.authfw</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehAuthenticationFramework</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.biometrics.face</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehBiometricsFace</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.bluetooth.a2dp</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehBluetoothAudioOffload</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.bluetooth.audio</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>ISehBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.bluetooth</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehBluetooth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.camera.provider</name>
+        <version>4.0</version>
+        <interface>
+            <name>ISehCameraProvider</name>
+            <instance>legacy/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.gnss</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.health</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.hqm</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehHqm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.hyper</name>
+        <interface>
+            <name>ISehHyPer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.media.converter</name>
+        <interface>
+            <name>ISehColorConverterStore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.miscpower</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehMiscPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.drk</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehDrk</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.engmode</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehEngmode</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.skpm</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehSkpm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.vaultkeeper</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehVaultKeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.widevine.keyprov</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehWidevineKeyProvisioning</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.snap</name>
+        <interface>
+            <name>ISehSnap</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.sysinput</name>
+        <version>1.0-3</version>
+        <interface>
+            <name>ISehSysInputDev</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.thermal</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.blockchain</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehBlockchain</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.hdm</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>ISehHdm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.iccc</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehIccc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.kg</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>ISehKg</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.ucm</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehUcm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.wifi.hostapd</name>
+        <version>3.0</version>
+        <interface>
+            <name>ISehHostapd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.wifi.supplicant</name>
+        <version>3.0-1</version>
+        <interface>
+            <name>ISehSupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.wifi</name>
+        <version>2.0-3</version>
+        <interface>
+            <name>ISehWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.radio</name>
+        <version>2.2</version>
+        <interface>
+            <name>ISehRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.radio.bridge</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehBridge</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.radio.channel</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehChannel</name>
+            <instance>epdgd</instance>
+            <instance>epdgd2</instance>
+            <instance>imsd</instance>
+            <instance>imsd2</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

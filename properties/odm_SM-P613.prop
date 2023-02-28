@@ -1,0 +1,6 @@
+# Device
+ro.product.odm.model=SM-P613
+
+# Radio
+ro.radio.noril=yes
+persist.vendor.radio.atfwd.start=false
