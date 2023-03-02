@@ -1,0 +1,62 @@
+
+# Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+#
+on post-fs-data
+# Permissions for audio
+    chown system radio /sys/class/audio/earjack/key_state
+    chown system radio /sys/class/audio/earjack/mic_adc
+    chown system radio /sys/class/audio/earjack/select_jack
+    chown system radio /sys/class/audio/earjack/state
+
+on property:sys.boot_completed=1
+# TI Amp Calibration/Validation
+    chown system audio /sys/class/tas25xx/calib/calibration
+    chown system audio /sys/class/tas25xx/calib/cstatus
+    chown system audio /sys/class/tas25xx/calib/cstatus_r
+    chown system audio /sys/class/tas25xx/calib/rdc
+    chown system audio /sys/class/tas25xx/calib/rdc_r
+    chown system audio /sys/class/tas25xx/calib/temp
+    chown system audio /sys/class/tas25xx/calib/temp_r
+    chown system audio /sys/class/tas25xx/valid/status
+    chown system audio /sys/class/tas25xx/valid/status_r
+    chown system audio /sys/class/tas25xx/valid/validation
+    mkdir /efs/tas25xx 0770 audioserver audio
+    chown audioserver audio /efs/tas25xx/calib_re
+    chown audioserver audio /efs/tas25xx/amb_temp
+    chown audioserver audio /efs/tas25xx/calib_re_r
+    chown audioserver audio /efs/tas25xx/amb_temp_r
+    chmod 0660 /efs/tas25xx/calib_re
+    chmod 0660 /efs/tas25xx/amb_temp
+    chmod 0660 /efs/tas25xx/calib_re_r
+    chmod 0660 /efs/tas25xx/amb_temp_r
+
+# DBMDx
+    chmod 0660 /dev/dbmdx-1
+    chown system audio /dev/dbmdx-1
+    chown system audio /sys/class/voicep/dbmdx/va_mic_mode
