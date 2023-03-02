@@ -1,0 +1,7 @@
+service vendor.samsung.hardware.hyper-default /vendor/bin/hw/vendor.samsung.hardware.hyper-service
+    class hal
+    user system
+    group system
+
+on property:init.svc.zygote=restarting
+    restart vendor.samsung.hardware.hyper-default
