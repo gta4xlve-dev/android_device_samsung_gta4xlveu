@@ -93,10 +93,6 @@ on boot
 # SSWAP
     write /proc/sys/vm/swappiness 145
 
-# SSU (Samsung SIM Unlock)
-#on property:ro.boot.carrierid=MXO
-#    setprop ssu.support 1
-
 # create data/gps for GPS
 on post-fs-data
     mkdir /data/vendor 0771 system system

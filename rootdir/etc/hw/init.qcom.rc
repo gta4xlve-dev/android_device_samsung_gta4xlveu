@@ -624,20 +624,6 @@ on property:ro.data.large_tcp_window_size=true
 on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
 
-#service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
-#    -O/data/vendor/wifi/wpa/sockets -puse_p2p_group_interface=1 -dd \
-#    -g@android:vendor_wpa_wlan0
-#   we will start as root and wpa_supplicant will switch to user wifi
-#   after setting up the capabilities required for WEXT
-#   user wifi
-#   group wifi inet keystore
-#    interface android.hardware.wifi.supplicant@1.0::ISupplicant default
-#    interface android.hardware.wifi.supplicant@1.1::ISupplicant default
-#    class main
-#    socket vendor_wpa_wlan0 dgram 660 wifi wifi
-#    disabled
-#    oneshot
-
 service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     -iwigig0 -Dnl80211 -c/data/vendor/wifi/wigig_supplicant.conf \
     -m/data/vendor/wifi/wigig_p2p_supplicant.conf \
@@ -785,11 +771,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
     user root
     group root system radio
     oneshot
-# Remove since is deprecated but throws AVC denial.
-# service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-#    class late_start
-#    user root
-#    oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
@@ -797,14 +778,6 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     group root system wakelock graphics
     disabled
     oneshot
-
-#    do not run the script for treble-based model
-#service qti-testscripts /system/bin/sh /product/etc/init.qcom.testscripts.sh
-#    class late_start
-#    user root
-#    disabled
-#    oneshot
-#    seclabel u:r:qti-testscripts:s0
 
 service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
     class late_start
@@ -820,8 +793,6 @@ service wifi-crda /vendor/bin/init.crda.sh
 
 on property:sys.boot_completed=1
     start qcom-post-boot
-#    do not run the script for treble-based model
-#    start qti-testscripts
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
@@ -970,12 +941,6 @@ service poweroffhandler /system/vendor/bin/poweroffhandler
     disabled
     oneshot
 
-# service time_daemon /vendor/bin/time_daemon
-#    class main
-#    user system
-#    group system
-#    capabilities SYS_TIME
-
 # Set vendor-ril lib path based on Meta version
 on property:vendor.rild.libpath=*
     setprop rild.libpath ${vendor.rild.libpath}
@@ -988,23 +953,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     group system
     disabled
     oneshot
-
-#service vendor.hbtp /vendor/bin/hbtp_daemon
-#     class main
-#     user system
-#     group system
-#     capabilities SYS_NICE
-#     disabled
-
-#service chre /vendor/bin/chre
-#    class late_start
-#    user system
-#    group system
-#    socket chre seqpacket 0660 root system
-#    shutdown critical
-
-#on property:vendor.chre.enabled=0
-#   stop chre
 
 service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
     class main
