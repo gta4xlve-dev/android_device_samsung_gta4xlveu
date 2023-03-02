@@ -1,6 +1,5 @@
-#! /vendor/bin/sh
 
-# Copyright (c) 2012, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019-2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -29,7 +28,15 @@
 #
 #
 
-PATH=/system/bin:$PATH
-export PATH
-cat /sys/devices/platform/rs300000a7.65536/force_sync
-cat /sys/devices/platform/rs300100a7.65536/force_sync
+on boot
+    chown radio system /sys/power/cpufreq_max_limit
+    chown radio system /sys/power/cpufreq_min_limit
+    chown radio system /sys/power/cpufreq_table
+    chown radio system /sys/power/over_limit
+    chmod 664 /sys/power/cpufreq_max_limit
+    chmod 664 /sys/power/cpufreq_min_limit
+    chmod 444 /sys/power/cpufreq_table
+    chmod 664 /sys/power/over_limit
+    write /sys/power/pm_debug_messages 1
+    chown radio system /sys/module/lpm_levels/parameters/secdebug
+    chmod 664 /sys/module/lpm_levels/parameters/secdebug

@@ -39,57 +39,10 @@ on init
     symlink /dev/block/bootdevice/by-name/steady  /dev/block/steady
     symlink /dev/block/bootdevice/by-name/persistent  /dev/block/persistent
 
-# Create carrier folder for HiddenMenu
 on post-fs
-    mkdir /efs/carrier 0755 system system
-    restorecon_recursive /efs
-
-	restorecon_recursive /mnt/vendor/efs
-	chown radio system /mnt/vendor/efs
-	chmod 0771 /mnt/vendor/efs
-
-	chown system radio /efs
-	chmod 0771 /efs
-	restorecon /efs
-
-    # carrier partition
-    chown system system /carrier
-    chmod 0771 /carrier
-    restorecon /carrier
-
-# Meta event
     chown system radio /sys/class/sensors/sensor_dev/flush
 
-# Fingerprint sensor
-    chmod 0660 /dev/goodix_fp
-    chown system system /dev/goodix_fp
-    chown system radio /sys/class/fingerprint/fingerprint/type_check
-    chown system radio /sys/class/fingerprint/fingerprint/name
-    chown system radio /sys/class/fingerprint/fingerprint/vendor
-    chown system radio /sys/class/fingerprint/fingerprint/adm
-    chown system radio /sys/class/fingerprint/fingerprint/bfs_values
-    chown system radio /sys/class/fingerprint/fingerprint/rb
-    mkdir /efs/biometrics 0770 system system
-    mkdir /efs/biometrics/meta 0770 system system
-
-    # spu partition
-    chown system system /spu
-    chmod 0771 /spu
-    restorecon /spu
-
 on boot
-    # Permission for nfc, eSE driver
-    chmod 0660 /dev/pn547
-    chmod 0660 /dev/p61
-    chown nfc nfc /dev/pn547
-    chown system system /dev/p61
-    chmod 0660 /dev/sec-nfc
-    chown nfc nfc /dev/sec-nfc
-
-# Permissions for FMM
-    chown system system /sys/class/sec/sec_debug/FMM_lock
-    chmod 0660 /sys/class/sec/sec_debug/FMM_lock
-
 # Permissions for Performance
     chown root system /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz
     chown root system /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/min_clock_mhz
@@ -113,9 +66,3 @@ on boot
     chown root system /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/max_freq
     chmod 0664 /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/min_freq
     chmod 0664 /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/max_freq
-
-# FINGERPRINT FRAMEWORK : starts goodixfingerprintd
-service goodixd /vendor/bin/goodixfingerprintd
-    class late_start
-    user system
-    group media_rw system

@@ -107,22 +107,3 @@ on init
     chmod 0400 /sys/module/sec_debug/parameters/reboot_multicmd
     chown system system /proc/rdx_bootdev
     chmod 0220 /proc/rdx_bootdev
-    # CONFIG_SEC_DEBUG --
-
-on late-init
-
-on post-fs
-
-on late-fs
-
-on post-fs-data
-
-on boot
-    # Permissions for sec_debug
-    chown root system /sys/class/sec/sec_debug/recovery_cause
-
-on shutdown
-
-# service definition
-
-# on property triggers
