@@ -41,6 +41,9 @@ TARGET_KERNEL_SOURCE := kernel/samsung/gta4xlve
 TARGET_KERNEL_CONFIG := vendor/gta4xlve_eur_open_defconfig
 TARGET_FORCE_PREBUILT_KERNEL := true
 
+# Media
+TARGET_USES_ION := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_SUPER_PARTITION_SIZE := 889192448
