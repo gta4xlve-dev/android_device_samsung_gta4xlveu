@@ -7,6 +7,23 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service \
     android.hardware.camera.provider@2.4-impl
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.4-service \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    vendor.qti.hardware.display.allocator-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    vendor.qti.hardware.display.allocator@1.0.vendor \
+    vendor.qti.hardware.display.allocator@3.0.vendor \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    gralloc.atoll \
+    hwcomposer.atoll \
+    memtrack.atoll \
+    lights.atoll
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
