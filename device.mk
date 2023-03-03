@@ -14,6 +14,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery.fstab:$(TARGET_COPY_OUT_RAMDISK)/fstab.default \
     $(LOCAL_PATH)/recovery.fstab:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.default
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-service \
+    android.hardware.health@2.1-impl
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
