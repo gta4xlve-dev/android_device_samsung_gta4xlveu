@@ -127,6 +127,10 @@ PRODUCT_PACKAGES += \
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3-service-qti
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
