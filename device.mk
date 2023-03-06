@@ -2,6 +2,42 @@
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
+    audio.primary.atoll \
+    audio.r_submix.default \
+    audio.usb.default \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    libsndmonitor \
+    libcomprcapture \
+    libhdmiedid \
+    libspkrprot \
+    libcirrusspkrprot \
+    liba2dpoffload \
+    libexthwplugin \
+    libhfp \
+    libbatterylistener \
+    libOmxAmrEnc \
+    libOmxAacEnc \
+    libOmxEvrcEnc
+
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.soundtrigger@2.2-impl
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service \
