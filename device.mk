@@ -45,6 +45,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
 
+# Media
+PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libOmxCore \
+    libc2dcolorconvert \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
