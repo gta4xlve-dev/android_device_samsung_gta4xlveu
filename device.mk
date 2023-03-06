@@ -54,6 +54,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung
 
+# Media
+PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libOmxCore \
+    libc2dcolorconvert \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
