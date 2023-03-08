@@ -100,6 +100,8 @@ on post-fs-data
     mkdir /data/vendor/gps 0771 system system
     chown system system /data/vendor/gps
 
+    mkdir /data/vendor/gatekeeper 0771 system system
+
 on property:sys.boot_completed=1
     setprop vendor.powerhal.init 1
 
