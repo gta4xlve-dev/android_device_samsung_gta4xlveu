@@ -128,6 +128,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.pixel-libperfmgr
+
 # Properties
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/properties/odm_SM-P613.prop:$(TARGET_COPY_OUT_ODM)/etc/build_SM-P613.prop \
@@ -171,6 +175,11 @@ PRODUCT_PACKAGES += \
 
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/pixel \
+    hardware/google/interfaces
 
 # USB
 PRODUCT_PACKAGES += \
