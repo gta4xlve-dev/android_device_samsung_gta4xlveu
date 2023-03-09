@@ -100,5 +100,8 @@ on post-fs-data
     mkdir /data/vendor/gps 0771 system system
     chown system system /data/vendor/gps
 
+on property:sys.boot_completed=1
+    setprop vendor.powerhal.init 1
+
 on early-init
     setprop ro.boot.product.hardware.sku ${ro.boot.em.model}
