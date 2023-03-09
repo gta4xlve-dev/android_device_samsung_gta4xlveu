@@ -2,6 +2,11 @@
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.5-service \
+    android.hardware.camera.provider@2.4-impl
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
