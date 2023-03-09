@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_omx
 
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
