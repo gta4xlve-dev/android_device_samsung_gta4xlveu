@@ -96,7 +96,8 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
