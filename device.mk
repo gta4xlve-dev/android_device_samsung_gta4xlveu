@@ -189,6 +189,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
 
+# Service manager
+PRODUCT_PACKAGES += \
+    vndservice \
+    vndservicemanager
+
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
