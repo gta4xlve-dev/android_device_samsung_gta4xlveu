@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.1-impl
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhwbinder
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
@@ -191,6 +195,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
+
+# Vndfwk
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
