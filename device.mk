@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.1-impl \
     android.hardware.soundtrigger@2.2-impl
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service \
@@ -86,6 +90,14 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.1-impl
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhwbinder.vendor
+
+# JSON
+PRODUCT_PACKAGES += \
+    libjson
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
@@ -101,7 +113,12 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -153,6 +170,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/properties/odm_SM-P613.prop:$(TARGET_COPY_OUT_ODM)/etc/build_SM-P613.prop \
     $(LOCAL_PATH)/properties/odm_SM-P619.prop:$(TARGET_COPY_OUT_ODM)/etc/build_SM-P619.prop
 
+# Radio
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Rootdir
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.class_main.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.class_main.sh \
@@ -189,6 +210,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
 
+# Service manager
+PRODUCT_PACKAGES += \
+    vndservice \
+    vndservicemanager
+
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -202,6 +228,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
+
+# Vndfwk
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
