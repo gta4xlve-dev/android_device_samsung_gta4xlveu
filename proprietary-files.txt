@@ -622,3 +622,6 @@ vendor/firmware/wlan/qca_cld/bdwlan.bin1
 vendor/firmware/wlan/qca_cld/bdwlan.bin2
 vendor/firmware/wlan/qca_cld/regdb.bin
 vendor/firmware/wlanmdsp.mbn
+
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.mdfpp.so
