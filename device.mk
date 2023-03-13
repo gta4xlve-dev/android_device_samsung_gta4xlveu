@@ -153,6 +153,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/properties/odm_SM-P613.prop:$(TARGET_COPY_OUT_ODM)/etc/build_SM-P613.prop \
     $(LOCAL_PATH)/properties/odm_SM-P619.prop:$(TARGET_COPY_OUT_ODM)/etc/build_SM-P619.prop
 
+# Radio
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Rootdir
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.class_main.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.class_main.sh \
