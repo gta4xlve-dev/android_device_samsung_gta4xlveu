@@ -800,3 +800,11 @@ vendor/etc/media_codecs_google_audio.xml
 vendor/etc/media_codecs_google_telephony.xml
 vendor/etc/media_codecs_google_video.xml
 vendor/etc/media_profiles.xml
+
+# Neural-networks
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
+vendor/lib64/libhexagon_nn_stub.so
+vendor/lib64/unnhal-acc-hvx.so
