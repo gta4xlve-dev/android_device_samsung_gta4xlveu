@@ -1021,3 +1021,9 @@ vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
+
+# TUI
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
