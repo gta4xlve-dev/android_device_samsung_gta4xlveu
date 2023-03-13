@@ -1033,3 +1033,10 @@ vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
+
+# TimeService
+-vendor/app/TimeService/TimeService.apk
+vendor/bin/time_client
+vendor/bin/time_daemon
+vendor/lib/libtime_genoff.so
+vendor/lib64/libtime_genoff.so
