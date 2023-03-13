@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     memtrack.atoll \
     lights.atoll
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4-service.clearkey
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
