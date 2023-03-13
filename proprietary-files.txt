@@ -934,3 +934,8 @@ vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio@2.2.so
 vendor/lib64/vendor.samsung.hardware.radio@2.2.so
+
+# Seccomp
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaextractor_sec.policy
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
