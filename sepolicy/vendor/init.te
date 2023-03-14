@@ -1,0 +1,9 @@
+# init.te
+
+allow init proc_last_kmsg:file setattr;
+
+# /sys/kernel/tracing
+allow init debugfs_tracing_debug:dir mounton;
+
+# /mnt/vendor/efs
+allow init efs_file:dir mounton;

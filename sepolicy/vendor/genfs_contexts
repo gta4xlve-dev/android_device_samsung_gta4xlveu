@@ -1,0 +1,51 @@
+# proc
+genfscon proc /last_kmsg                                                                                    u:object_r:proc_last_kmsg:s0
+
+# sysfs
+genfscon sysfs /bus/iio/devices                                                                             u:object_r:sysfs_iio:s0
+
+genfscon sysfs /class/input                                                                                 u:object_r:sysfs_input:s0
+genfscon sysfs /class/sec/tsp                                                                               u:object_r:sysfs_sec_touchscreen:s0
+genfscon sysfs /class/sensor_event                                                                          u:object_r:sysfs_sensors:s0
+genfscon sysfs /kernel/boot_wlan/                                                                           u:object_r:sysfs_wifi_writable:s0
+
+genfscon sysfs /devices/virtual/mdnie                                                                       u:object_r:sysfs_mdnie_writable:s0
+genfscon sysfs /devices/virtual/input/                                                                      u:object_r:sysfs_input:s0
+genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-23/23-0049/input/                                       u:object_r:sysfs_power_writable:s0
+genfscon sysfs /module/qpnp_power_on/parameters/                                                            u:object_r:sysfs_power_writable:s0
+genfscon sysfs /module/lpm_levels/parameters/                                                               u:object_r:sysfs_power_writable:s0
+genfscon sysfs /devices/platform/soc/8804000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/                   u:object_r:vendor_sysfs_mmc_host:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_mmc_host:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/state                             u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon2/cable.1/name                       u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/lcd/panel/                                                                  u:object_r:sysfs_lcd_writable:s0
+genfscon sysfs /devices/platform/soc/9800000.qcom,npu/subsys6/                                              u:object_r:sysfs_npu:s0
+genfscon sysfs /devices/platform/soc/soc:battery/power_supply/                                              u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery/lcd                                   u:object_r:sysfs_battery_writable:s0
+genfscon sysfs /devices/platform/soc/soc:sec-direct-charger/power_supply/                                   u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-22/22-0049/                                             u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-22/22-0057/                                             u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/soc/88c000.qcom,qup_uart/wakeup/                                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_mp3/wakeup28                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/sensors/                                                                    u:object_r:sysfs_sensors:s0
+genfscon sysfs /devices/virtual/sec/hall_ic/                                                                u:object_r:sysfs_sensors:s0
+genfscon sysfs /devices/virtual/sec/sec_key                                                                 u:object_r:sysfs_sec_key:s0
+genfscon sysfs /devices/virtual/sec/tsp                                                                     u:object_r:sysfs_sec_touchscreen:s0
+genfscon sysfs /devices/virtual/sec/tsp/cmd                                                                 u:object_r:sysfs_touchscreen_writable:s0
+genfscon sysfs /devices/virtual/sec/tsp/prox_power_off                                                      u:object_r:sysfs_touchscreen_writable:s0
+genfscon sysfs /devices/virtual/sec/tsp/input/enabled                                                       u:object_r:sysfs_touchscreen_writable:s0
+genfscon sysfs /devices/virtual/sec/switch                                                                  u:object_r:sysfs_sec_switch:s0
+genfscon sysfs /devices/virtual/sec/switch/afc_disable                                                      u:object_r:sysfs_sec_switch_writable:s0
+genfscon sysfs /devices/virtual/camera/                                                                     u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info                                                u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/camera/flash/rear_flash                                                     u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                                             u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/                                                      u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/                                                      u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-wf-thermistor/                                                      u:object_r:sysfs_thermal:s0
+
+genfscon sysfs /power/                                                                                      u:object_r:sysfs_power_writable:s0
+
+genfscon sysfs /wifi                                                                                        u:object_r:sysfs_wifi:s0
+genfscon sysfs /wifi/mac_addr                                                                               u:object_r:sysfs_wifi_writable:s0
+genfscon sysfs /wifi/memdump                                                                                u:object_r:sysfs_wifi_writable:s0

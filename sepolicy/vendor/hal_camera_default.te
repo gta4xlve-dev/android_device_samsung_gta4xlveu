@@ -1,0 +1,16 @@
+# /efs/FactoryApp/
+allow hal_camera_default app_efs_file:file { read open getattr };
+allow hal_camera_default app_efs_file:dir search;
+
+# /sys/devices/virtual/camera/
+allow hal_camera_default sysfs_camera:file { read open getattr };
+allow hal_camera_default sysfs_camera:dir search;
+allow hal_camera_default sysfs_camera_writable:file { read write open getattr };
+
+binder_call(hal_camera_default, system_server)
+get_prop(hal_camera_default, vendor_mpctl_prop)
+
+# EFS
+allow hal_camera_default efs_file:dir search;
+
+dontaudit hal_camera_default default_prop:file read;

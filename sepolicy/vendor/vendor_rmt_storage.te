@@ -1,0 +1,1 @@
+allow vendor_rmt_storage sysfs_npu:file { read open };

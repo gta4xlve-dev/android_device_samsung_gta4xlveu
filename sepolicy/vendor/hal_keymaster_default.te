@@ -1,0 +1,11 @@
+# hal_keymaster_default
+
+# /mnt/vendor
+allow hal_keymaster_default mnt_vendor_file:dir search;
+
+# /mnt/vendor/efs
+allow hal_keymaster_default efs_file:dir search;
+
+# /mnt/vendor/efs/DAK/
+allow hal_keymaster_default prov_efs_file:dir search;
+allow hal_keymaster_default prov_efs_file:file { read open getattr };

@@ -115,6 +115,8 @@ TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # System properties

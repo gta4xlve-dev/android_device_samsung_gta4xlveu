@@ -1,0 +1,33 @@
+# hal_power_default.te
+
+# /dev/cpu_dma_latency
+allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
+
+# /dev/stune/top-app/schedtune.boost
+allow hal_power_default cgroup:file rw_file_perms;
+
+# /sys/class/input/
+allow hal_power_default sysfs_input:dir r_dir_perms;
+
+# /sys/class/power/
+allow hal_power_default sysfs_power:dir r_dir_perms;
+allow hal_power_default sysfs_power:file r_file_perms;
+allow hal_power_default sysfs_power_writable:file rw_file_perms;
+
+# /sys/devices/system/cpu/cpu[0-9]/cpufreq/scaling_max_freq
+allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
+
+# /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_pwrlevel
+allow hal_power_default vendor_sysfs_kgsl:file { write open };
+
+# /sys/devices/platform/soc/a84000.i2c/i2c-23/23-0049/input/
+allow hal_power_default sysfs_power_writable:file { write open };
+allow hal_power_default sysfs_power_writable:dir search;
+
+# /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_trigger_count
+allow hal_power_default vendor_sysfs_devfreq:dir search;
+allow hal_power_default vendor_sysfs_devfreq:file { write open };
+
+allow hal_power_default property_socket:sock_file write;
+unix_socket_connect(hal_power_default, property, init)
+set_prop(hal_power_default, vendor_power_prop)

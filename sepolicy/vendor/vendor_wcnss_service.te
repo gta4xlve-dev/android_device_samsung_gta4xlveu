@@ -1,0 +1,5 @@
+allow vendor_wcnss_service sysfs_npu:file { read open };
+
+get_prop(vendor_wcnss_service, vendor_mpctl_prop)
+
+allow vendor_wcnss_service conn_vendor_data_file:dir search;

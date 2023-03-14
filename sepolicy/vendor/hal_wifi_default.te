@@ -1,0 +1,6 @@
+# hal_wifi_default.te
+
+# Needed for wifi hotspot to read sap interface
+get_prop(hal_wifi_default, vendor_wifi_prop)
+
+allow hal_wifi_default self:capability sys_module;
