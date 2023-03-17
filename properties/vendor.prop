@@ -150,6 +150,9 @@ debug.stagefright.omx_default_rank=0
 # Netflix
 ro.netflix.bsp_rev=Q6250-19132-1
 
+# OEM unlock
+ro.oem_unlock_supported=1
+
 # Radio
 persist.vendor.radio.enableadvancedscan=true
 ro.telephony.iwlan_operation_mode=legacy
