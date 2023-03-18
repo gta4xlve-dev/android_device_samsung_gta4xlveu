@@ -476,4 +476,13 @@
         </interface>
         <fqname>@3.1::ISehSupplicant/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
