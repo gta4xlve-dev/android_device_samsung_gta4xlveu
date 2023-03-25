@@ -28,9 +28,9 @@ service sim_config /vendor/bin/secril_config_svc SimConfig
     oneshot
     disabled
 
-on fs
+on fs && property:ro.radio.noril=no
     exec_start sim_config
 
-on post-fs-data
+on post-fs-data && property:ro.radio.noril=no
     exec_start network_config
     setprop ro.telephony.default_network ${ro.vendor.radio.default_network}

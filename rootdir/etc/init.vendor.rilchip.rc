@@ -10,6 +10,7 @@ service ril-daemon /vendor/bin/hw/rild
     group radio cache inet misc audio log oem_2901 system drmrpc vpn readproc wakelock net_admin
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW SYS_ADMIN CHOWN SYS_TIME
     socket sap_uim_socket1 stream 660 bluetooth bluetooth
+    disabled
 
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /vendor/bin/qmuxd
@@ -42,3 +43,6 @@ service vendor.embmsslServer /vendor/bin/embmsslServer
 
 on property:init.svc.vendor.netmgrd=running && property:ro.vendor.use_data_netmgrd=false
     stop vendor.netmgrd
+
+on property:ro.radio.noril=no
+    enable ril-daemon
