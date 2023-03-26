@@ -106,9 +106,6 @@ TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-08-01
-
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
