@@ -1,3 +1,5 @@
+# All blobs are extracted from P619XXU2BWB7 unless pinned
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/dspservice
