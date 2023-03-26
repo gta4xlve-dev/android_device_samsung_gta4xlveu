@@ -24,6 +24,25 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+SRC="$1"
+if [ -z "${SRC}" ]; then
+    SRC="adb"
+fi
+
+VENDOR_SECURITY_PATCH=""
+if [[ "${SRC}" == "adb" ]]; then
+    VENDOR_SECURITY_PATCH="$(adb shell getprop ro.vendor.build.security_patch)"
+elif [[ -f "${SRC}/vendor/build.prop" ]]; then
+    VENDOR_SECURITY_PATCH="$(cat ${SRC}/vendor/build.prop | grep ro.vendor.build.security_patch | cut -d "=" -f 2)"
+fi
+
+if [[ "$VENDOR_SECURITY_PATCH" == "" ]]; then
+    echo "Unable to determine the vendor security patch"
+    exit 1
+else
+    echo "Vendor security patch detected as $VENDOR_SECURITY_PATCH"
+fi
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
@@ -31,6 +50,10 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 write_headers
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
+
+(cat << EOF) >> $BOARDMK
+VENDOR_SECURITY_PATCH := ${VENDOR_SECURITY_PATCH}
+EOF
 
 # Finish
 write_footers
