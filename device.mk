@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0.vendor
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
@@ -137,6 +141,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor
+
+# NeuralNetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
