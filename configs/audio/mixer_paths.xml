@@ -4227,4 +4227,32 @@
 
     <path name="call-proxy-in">
     </path>
+
+    <path name="handset-mic">
+        <path name="rec-main-mic" />
+    </path>
+
+    <path name="voice-handset">
+        <path name="voip-comm-handset" />
+    </path>
+
+    <path name="voice-speaker-stereo">
+        <path name="voip-comm-speaker" />
+    </path>
+
+    <path name="voice-speaker-mic">
+        <path name="voip-comm-speaker-mic" />
+    </path>
+
+    <path name="speaker-mic">
+        <path name="main-mic" />
+    </path>
+
+    <path name="headphones">
+        <path name="listenback-headphones" />
+    </path>
+
+    <path name="voice-headphones">
+        <path name="headphones" />
+    </path>
 </mixer>
