@@ -59,7 +59,7 @@ vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=4
 vendor.audio_hal.period_size=192
 vendor.mm.enable.qcom_parser=16777215
-vendor.voice.path.for.pcm.voip=true
+vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
