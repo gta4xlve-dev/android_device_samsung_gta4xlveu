@@ -103,5 +103,7 @@ on post-fs-data
 on property:sys.boot_completed=1
     setprop vendor.powerhal.init 1
 
+    swapon_all /vendor/etc/fstab.default
+
 on early-init
     setprop ro.boot.product.hardware.sku ${ro.boot.em.model}

@@ -61,3 +61,6 @@ odm	/odm	ext4	ro	wait,avb,logical,first_stage_mount
 
 /dev/block/bootdevice/by-name/recovery       /recovery        emmc    defaults      recoveryonly
 /dev/block/bootdevice/by-name/boot           /boot            emmc    defaults      recoveryonly
+
+# Zram
+/dev/block/zram0                                   none                swap      defaults                                              zramsize=2147483648,auto_configure
