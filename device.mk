@@ -131,6 +131,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# IPACM
+PRODUCT_PACKAGES += \
+    IPACM_cfg.xml \
+    ipacm
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc

@@ -34,3 +34,6 @@ on fs && property:ro.radio.noril=no
 on post-fs-data && property:ro.radio.noril=no
     exec_start network_config
     setprop ro.telephony.default_network ${ro.vendor.radio.default_network}
+
+on property:ro.radio.noril=yes && property:init.svc.vendor.ipacm=running
+    stop vendor.ipacm
