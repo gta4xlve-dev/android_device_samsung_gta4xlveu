@@ -17,6 +17,8 @@
 
 /dev/ttyGS[0-9]*	u:object_r:serial_device:s0
 
+/dev/block/mmcblk0p1    u:object_r:sdcard_block_device:s0
+
 # Qos
 /dev/network_throughput                      u:object_r:radio_qos_device:s0
 
