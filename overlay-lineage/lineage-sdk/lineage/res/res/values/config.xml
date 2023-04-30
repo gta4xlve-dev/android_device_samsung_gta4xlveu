@@ -18,5 +18,6 @@
         <item>restart</item>
         <item>restart_recovery</item>
         <item>restart_download</item>
+        <item>restart_fastboot</item>
      </string-array>
 </resources>
