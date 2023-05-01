@@ -895,7 +895,6 @@ vendor/lib64/libqmiservices-sem-ext.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril_sem.so
-vendor/lib64/librilutils.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsystem_health_mon.so

@@ -216,7 +216,8 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    librmnetctl
+    librmnetctl \
+    librilutils
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
