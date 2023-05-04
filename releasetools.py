@@ -17,12 +17,22 @@
 import common
 import re
 
+SUPPORTED_MODELS = ["SM-P613", "SM-P619"]
+
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
 
+def FullOTA_Assertions(info):
+  OTA_Assertions(info)
+  return
+
 def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
+  return
+
+def IncrementalOTA_Assertions(info):
+  OTA_Assertions(info)
   return
 
 def AddImage(info, basename, dest):
@@ -34,4 +44,8 @@ def AddImage(info, basename, dest):
 def OTA_InstallEnd(info):
   info.script.Print("Patching firmware images...")
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  return
+
+def OTA_Assertions(info):
+  info.script.AssertOemProperty("ro.boot.em.model", SUPPORTED_MODELS, True)
   return
