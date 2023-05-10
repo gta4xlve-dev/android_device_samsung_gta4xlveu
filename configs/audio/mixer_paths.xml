@@ -4229,7 +4229,7 @@
     </path>
 
     <path name="handset-mic">
-        <path name="rec-main-mic" />
+        <path name="main-mic" />
     </path>
 
     <path name="voice-handset">
