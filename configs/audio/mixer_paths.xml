@@ -4259,4 +4259,28 @@
     <path name="camcorder-mic">
         <path name="camcorder-main-mic" />
     </path>
+
+    <path name="voice-call">
+        <path name="voicemmode1-call" />
+    </path>
+
+    <path name="voice-call headphones">
+        <path name="voicemmode1-call headphones" />
+    </path>
+
+    <path name="voice-call headset">
+        <path name="voicemmode1-call headset" />
+    </path>
+
+    <path name="voice-call speaker">
+        <path name="voicemmode1-call speaker" />
+    </path>
+
+    <path name="voice-headset">
+        <path name="voip-comm-headset" />
+    </path>
+
+    <path name="voice-headset-mic">
+        <path name="voip-comm-headset-mic" />
+    </path>
 </mixer>
