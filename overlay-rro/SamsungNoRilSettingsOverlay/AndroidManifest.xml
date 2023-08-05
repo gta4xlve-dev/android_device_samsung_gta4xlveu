@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lineageos.samsung.norilsettingsoverlay">
+    <application android:hasCode="false" />
+    <overlay android:isStatic="true"
+             android:priority="1"
+             android:targetPackage="com.android.settings"
+             android:targetName="SamsungNoRilSettingsOverlay"
+             android:resourcesMap="@xml/overlays"
+             android:requiredSystemPropertyName="ro.radio.noril"
+             android:requiredSystemPropertyValue="yes" />
+</manifest>
