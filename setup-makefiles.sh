@@ -28,6 +28,11 @@ source "${HELPER}"
 function vendor_imports() {
     cat <<EOF >>"$1"
 		"device/samsung/gta4xlveu",
+		"hardware/qcom-caf/wlan",
+		"hardware/qcom-caf/sm8150",
+		"vendor/qcom/opensource/commonsys-intf/display",
+		"vendor/qcom/opensource/dataservices",
+		"vendor/qcom/opensource/display",
 EOF
 }
 
