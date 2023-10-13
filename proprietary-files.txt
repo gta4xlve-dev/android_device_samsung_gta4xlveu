@@ -1,4 +1,4 @@
-# All blobs are extracted from P619XXS3BWE3 unless pinned
+# All blobs are extracted from P619XXU4BWH3 unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
