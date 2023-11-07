@@ -15,8 +15,8 @@ genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-23/23-0049/input/           
 genfscon sysfs /module/qpnp_power_on/parameters/                                                            u:object_r:sysfs_power_writable:s0
 genfscon sysfs /module/lpm_levels/parameters/                                                               u:object_r:sysfs_power_writable:s0
 genfscon sysfs /devices/platform/soc/8804000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/                   u:object_r:vendor_sysfs_mmc_host:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/state                             u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon2/cable.1/name                       u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/state                             u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon2/cable.1/name                       u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/virtual/lcd/panel/                                                                  u:object_r:sysfs_lcd_writable:s0
 genfscon sysfs /devices/platform/soc/9800000.qcom,npu/subsys6/                                              u:object_r:sysfs_npu:s0
 genfscon sysfs /devices/platform/soc/soc:battery/power_supply/                                              u:object_r:sysfs_battery:s0
