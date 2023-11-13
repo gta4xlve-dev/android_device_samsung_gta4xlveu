@@ -113,8 +113,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-service \
-    android.hardware.health@2.1-impl
+    android.hardware.health-service.qti
 
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
