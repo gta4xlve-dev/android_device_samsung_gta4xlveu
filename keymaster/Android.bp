@@ -7,10 +7,10 @@ cc_binary {
         "libcutils",
         "libhardware",
         "libhidlbase",
+        "libskeymaster4device",
         "libkeymaster4",
         "libkeymaster4_1support",
         "liblog",
-        "libskeymaster4device",
         "libutils",
     ],
 
