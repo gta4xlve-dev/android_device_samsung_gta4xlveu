@@ -4248,6 +4248,10 @@
         <path name="main-mic" />
     </path>
 
+    <path name="voice-rec-mic">
+        <path name="main-mic" />
+    </path>
+
     <path name="headphones">
         <path name="listenback-headphones" />
     </path>
