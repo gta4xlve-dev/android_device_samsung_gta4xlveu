@@ -4291,4 +4291,22 @@
     <path name="headset-mic">
         <path name="ear-main-mic" />
     </path>
+
+    <path name="bt-sco-mic-wb">
+    </path>
+
+    <path name="bt-sco-headset-wb">
+    </path>
+
+    <path name="voice-call bt-sco-wb">
+        <path name="voicemmode1-call bt-sco-wb" />
+    </path>
+
+    <path name="voice-call usb-headphones">
+        <path name="voicemmode1-call usb-headphones" />
+    </path>
+
+    <path name="voice-call usb-headset">
+        <path name="voicemmode1-call usb-headset" />
+    </path>
 </mixer>
