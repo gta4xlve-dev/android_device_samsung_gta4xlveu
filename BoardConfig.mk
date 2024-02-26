@@ -43,6 +43,14 @@ TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/batt_slate_mode
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE := true
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE := false
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 loop.max_part=7 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image kpti=off
 BOARD_KERNEL_BASE        := 0x00000000
