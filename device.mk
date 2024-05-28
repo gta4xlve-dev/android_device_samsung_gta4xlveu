@@ -295,6 +295,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    bootable/deprecated-ota \
     vendor/samsung/gta4xlveu \
     hardware/google/pixel \
     hardware/google/interfaces
