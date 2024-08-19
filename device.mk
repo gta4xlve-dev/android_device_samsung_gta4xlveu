@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.6.vendor
+    android.hardware.camera.provider@2.6.vendor \
+    libexif.vendor
 
 # Display
 PRODUCT_PACKAGES += \
@@ -114,7 +115,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    libsqlite.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -130,7 +132,8 @@ PRODUCT_PACKAGES += \
 
 # JSON
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libjsoncpp.vendor
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -145,6 +148,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
     android.hardware.keymaster@4.1.vendor
+
+# Libcurl
+PRODUCT_PACKAGES += \
+    libcurl.vendor
 
 # Media
 PRODUCT_PACKAGES += \
