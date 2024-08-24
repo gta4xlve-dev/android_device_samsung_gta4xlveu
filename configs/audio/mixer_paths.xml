@@ -3517,16 +3517,16 @@
     <!-- TX part -->
     <path name="voip-comm-handset-mic">
         <path name="main-sub-mic" />
-        <ctl name="TX_DEC0 Volume" value="84" />
-        <ctl name="TX_DEC1 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="104" />
+        <ctl name="TX_DEC1 Volume" value="104" />
         <ctl name="ADC1 Volume" value="0" />
         <ctl name="ADC3 Volume" value="0" />
     </path>
 
     <path name="voip-comm-speaker-mic">
         <path name="main-sub-mic" />
-        <ctl name="TX_DEC0 Volume" value="84" />
-        <ctl name="TX_DEC1 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="104" />
+        <ctl name="TX_DEC1 Volume" value="104" />
         <ctl name="ADC1 Volume" value="0" />
         <ctl name="ADC3 Volume" value="0" />
     </path>
@@ -4228,8 +4228,22 @@
     <path name="call-proxy-in">
     </path>
 
+    <!-- QTI paths -> Samsung paths -->
+
+    <path name="speaker-mic">
+        <path name="voip-comm-speaker-mic" />
+    </path>
+
     <path name="handset-mic">
-        <path name="main-mic" />
+        <path name="voip-comm-handset-mic" />
+    </path>
+
+    <path name="headset-mic">
+        <path name="voip-comm-headset-mic" />
+    </path>
+
+    <path name="headphones">
+        <path name="listenback-headphones" />
     </path>
 
     <path name="voice-handset">
@@ -4244,16 +4258,8 @@
         <path name="voip-comm-speaker-mic" />
     </path>
 
-    <path name="speaker-mic">
-        <path name="main-mic" />
-    </path>
-
     <path name="voice-rec-mic">
         <path name="main-mic" />
-    </path>
-
-    <path name="headphones">
-        <path name="listenback-headphones" />
     </path>
 
     <path name="voice-headphones">
@@ -4288,16 +4294,6 @@
         <path name="voip-comm-headset-mic" />
     </path>
 
-    <path name="headset-mic">
-        <path name="ear-main-mic" />
-    </path>
-
-    <path name="bt-sco-mic-wb">
-    </path>
-
-    <path name="bt-sco-headset-wb">
-    </path>
-
     <path name="voice-call bt-sco-wb">
         <path name="voicemmode1-call bt-sco-wb" />
     </path>
@@ -4308,5 +4304,11 @@
 
     <path name="voice-call usb-headset">
         <path name="voicemmode1-call usb-headset" />
+    </path>
+
+    <path name="bt-sco-mic-wb">
+    </path>
+
+    <path name="bt-sco-headset-wb">
     </path>
 </mixer>

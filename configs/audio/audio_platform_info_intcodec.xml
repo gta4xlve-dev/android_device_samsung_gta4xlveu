@@ -109,6 +109,14 @@
         <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" acdb_id="147"/>
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="157"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" acdb_id="7" />
+        <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="57" />
+        <device name="SND_DEVICE_IN_HANDSET_MIC_AEC" acdb_id="57" />
+        <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" acdb_id="57" />
+        <device name="SND_DEVICE_IN_SPEAKER_MIC" acdb_id="58" />
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC" acdb_id="58" />
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_NS" acdb_id="58" />
+        <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="59" />
+        <device name="SND_DEVICE_IN_HEADSET_MIC_AEC" acdb_id="59" />
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
