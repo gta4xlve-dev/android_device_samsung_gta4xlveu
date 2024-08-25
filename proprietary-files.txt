@@ -582,7 +582,7 @@ vendor/lib64/libmm-hdcpmgr.so
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
@@ -640,7 +640,7 @@ vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/mercury.json
 vendor/etc/sap.conf
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib/libbatching.so
@@ -710,7 +710,7 @@ vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
 
 # Keymaster
 vendor/lib64/libkeymaster_helper.so
--vendor/lib64/libskeymaster4device.so
+vendor/lib64/libskeymaster4device.so
 
 # Media
 vendor/etc/system_properties.xml
@@ -791,8 +791,8 @@ vendor/etc/media_profiles_vendor.xml
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/unnhal-acc-hvx.so
 
@@ -1017,7 +1017,7 @@ vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 
 # TimeService
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_client
 vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
