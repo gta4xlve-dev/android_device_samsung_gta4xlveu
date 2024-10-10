@@ -1043,7 +1043,6 @@ vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/icm.conf
 vendor/etc/wifi/indoorchannel.info
 vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/libnanopb.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
