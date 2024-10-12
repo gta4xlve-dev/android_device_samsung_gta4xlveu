@@ -1,4 +1,4 @@
-# All blobs are extracted from P619XXU6CXE2 unless pinned
+# All blobs are extracted from P619XXU6CXE8 unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -897,8 +897,6 @@ vendor/lib64/liboemaids_vendor.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
-vendor/lib64/libqmiservices-ext.so
-vendor/lib64/libqmiservices-sem-ext.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril_sem.so
