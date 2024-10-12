@@ -1,8 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
-#
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -24,36 +23,22 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-SRC="$1"
-if [ -z "${SRC}" ]; then
-    SRC="adb"
-fi
+function vendor_imports() {
+    cat <<EOF >>"$1"
+		"device/samsung/gta4xlveu",
+EOF
+}
 
-VENDOR_SECURITY_PATCH=""
-if [[ "${SRC}" == "adb" ]]; then
-    VENDOR_SECURITY_PATCH="$(adb shell getprop ro.vendor.build.security_patch)"
-elif [[ -f "${SRC}/vendor/build.prop" ]]; then
-    VENDOR_SECURITY_PATCH="$(cat ${SRC}/vendor/build.prop | grep ro.vendor.build.security_patch | cut -d "=" -f 2)"
-fi
-
-if [[ "$VENDOR_SECURITY_PATCH" == "" ]]; then
-    echo "Unable to determine the vendor security patch"
-    exit 1
-else
-    echo "Vendor security patch detected as $VENDOR_SECURITY_PATCH"
-fi
+function lib_to_package_fixup() {
+    lib_to_package_fixup_clang_rt_ubsan_standalone "$1" ||
+        lib_to_package_fixup_proto_3_9_1 "$1"
+}
 
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
-# Warning headers and guards
 write_headers
-
-write_makefiles "${MY_DIR}/proprietary-files.txt" true
-
-(cat << EOF) >> $BOARDMK
-VENDOR_SECURITY_PATCH := ${VENDOR_SECURITY_PATCH}
-EOF
+write_makefiles "${MY_DIR}/proprietary-files.txt"
 
 # Finish
 write_footers
