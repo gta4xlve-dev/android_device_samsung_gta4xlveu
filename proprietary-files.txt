@@ -119,6 +119,7 @@ vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbthost_if.so
+vendor/lib/libsehbluetooth_audio_session.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
@@ -135,6 +136,7 @@ vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbthost_if.so
+vendor/lib64/libsehbluetooth_audio_session.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
