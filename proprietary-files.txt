@@ -207,9 +207,15 @@ vendor/lib/camera/uw_dual_calibration.bin
 vendor/lib/camera/w_dual_calibration.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.samsung.chi.override.so
+vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libDualCamBokehCapture.camera.samsung.so
+vendor/lib/libFace_Landmark_API.camera.samsung.so
+vendor/lib/libHandGesture.camera.samsung.so
+vendor/lib/libHprFace_GAE_api.camera.samsung.so
+vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib/libIDDQD_core.so
 vendor/lib/libIDDQD_interface.so
+vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libSNPE.so
 vendor/lib/libarcsoft_dualcam_portraitlighting.so
 vendor/lib/libarcsoft_dualcam_portraitlighting_preview.so
@@ -255,6 +261,7 @@ vendor/lib/libnpu.so
 vendor/lib/libpadm.so
 vendor/lib/libqcwrappercommon.so
 vendor/lib/libremosaic_daemon.so
+vendor/lib/libsavscmn.so
 vendor/lib/libscaler_hw.unifunc.so
 vendor/lib/libscaler_sw.unifunc.so
 vendor/lib/libsec2qc_conversion.so
@@ -282,6 +289,7 @@ vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libvideobeauty.uniplugin@1.0.so
 vendor/lib/libvideobeauty_interface.so
 vendor/lib/libvideoutils.so
+vendor/lib/unihal_cutils@2.15.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
@@ -329,9 +337,15 @@ vendor/lib64/camera/components/com.wrapper.stats.pdlib.so
 vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.samsung.chi.override.so
+vendor/lib64/libBeauty_v4.camera.samsung.so
 vendor/lib64/libDualCamBokehCapture.camera.samsung.so
+vendor/lib64/libFace_Landmark_API.camera.samsung.so
+vendor/lib64/libHandGesture.camera.samsung.so
+vendor/lib64/libHprFace_GAE_api.camera.samsung.so
+vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib64/libIDDQD_core.so
 vendor/lib64/libIDDQD_interface.so
+vendor/lib64/libOpenCv.camera.samsung.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libarcsoft_dualcam_portraitlighting.so
 vendor/lib64/libarcsoft_picportrait_video.so
@@ -379,6 +393,7 @@ vendor/lib64/libpadm.so
 vendor/lib64/libqcwrappercommon.so
 vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libremosaiclib.so
+vendor/lib64/libsavscmn.so
 vendor/lib64/libscaler_hw.unifunc.so
 vendor/lib64/libscaler_sw.unifunc.so
 vendor/lib64/libsec2qc_conversion.so
@@ -404,6 +419,7 @@ vendor/lib64/libvdis_interface.so
 vendor/lib64/libvideobeauty.arcsoft.so
 vendor/lib64/libvideobeauty.uniplugin@1.0.so
 vendor/lib64/libvideobeauty_interface.so
+vendor/lib64/unihal_cutils@2.15.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # Camera (provider)
