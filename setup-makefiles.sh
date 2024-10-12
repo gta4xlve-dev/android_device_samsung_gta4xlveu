@@ -42,6 +42,9 @@ function lib_to_package_fixup_vendor_variants() {
     fi
 
     case "$1" in
+        vendor.qti.hardware.camera.device@1.0)
+            echo "$1_vendor"
+            ;;
         libc2dcolorconvert | \
         libplatformconfig | \
         libwpa_client) ;;
