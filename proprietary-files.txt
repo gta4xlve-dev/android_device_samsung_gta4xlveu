@@ -44,6 +44,9 @@ vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/sound_trigger_mixer_paths.xml
 vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/usb_audio_policy_configuration.xml
+vendor/lib/lib_SamsungRec_07010.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_soundaliveresampler.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -60,6 +63,7 @@ vendor/lib/libfloatingfeature.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib/librecordalive.so
+vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libasphere.so
