@@ -38,7 +38,6 @@ endif
 
 # Display
 TARGET_SCREEN_DENSITY := 240
-TARGET_USES_HWC2 := true
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
 # Filesystem

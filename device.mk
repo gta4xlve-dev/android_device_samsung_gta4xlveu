@@ -82,10 +82,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@3.0.vendor \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
-    gralloc.atoll \
-    hwcomposer.atoll \
-    memtrack.atoll \
-    lights.atoll
+    gralloc.qcom \
+    hwcomposer.qcom
 
 # DRM
 PRODUCT_PACKAGES += \
