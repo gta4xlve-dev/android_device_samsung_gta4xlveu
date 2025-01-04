@@ -727,24 +727,12 @@ vendor/lib64/libskeymaster4device.so
 
 # Media
 vendor/etc/system_properties.xml
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libFrucSSMLib.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so;DISABLE_CHECKELF
 vendor/lib/libOmxSwVencMpeg4.so;DISABLE_CHECKELF
-vendor/lib/libOmxWmaDec.so
 vendor/lib/libapex_cmn.so;DISABLE_CHECKELF
 vendor/lib/libapex_utils.so
 vendor/lib/libcodecsolutionhelper_vendor.so
@@ -758,22 +746,11 @@ vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
 vendor/lib/vintf-codecsolution-V2-ndk_platform.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libMpeg4SwEncoder.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxSwVdec.so;DISABLE_CHECKELF
 vendor/lib64/libOmxSwVencMpeg4.so;DISABLE_CHECKELF
-vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libcodecsolutionhelper_vendor.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal.so
