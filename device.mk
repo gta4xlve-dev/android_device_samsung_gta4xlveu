@@ -22,10 +22,7 @@ PRODUCT_PACKAGES += \
     liba2dpoffload \
     libexthwplugin \
     libhfp \
-    libbatterylistener \
-    libOmxAmrEnc \
-    libOmxAacEnc \
-    libOmxEvrcEnc
+    libbatterylistener
 
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \
@@ -155,7 +152,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libmm-omxcore \
     libOmxCore \
     libc2dcolorconvert \
     libOmxVdec \
