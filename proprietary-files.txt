@@ -1011,9 +1011,7 @@ vendor/bin/factory.ssc
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/ssgtzd
-vendor/bin/wifilearner
 vendor/etc/init/ssgtzd.rc
-vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 vendor/etc/ssg/ta_config.json
@@ -1024,5 +1022,4 @@ vendor/etc/wifi/indoorchannel.info
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/libnanopb.so
-vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
