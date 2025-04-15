@@ -890,7 +890,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/sec_config_oem
 vendor/lib/libconfigdb.so
 vendor/lib/libdsi_netctrl.so
-vendor/lib/libfloatingfeature.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
 vendor/lib/libnetmgr_common.so
@@ -900,7 +899,6 @@ vendor/lib/libpdnotifier.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
-vendor/lib/libsecnativefeature.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 vendor/lib64/libSemDataProps.so
@@ -908,7 +906,6 @@ vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libengmode_client.so
-vendor/lib64/libfloatingfeature.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
@@ -921,20 +918,14 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril_sem.so
 vendor/lib64/libsec-ril.so
-vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libxml.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
-vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
-vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so
-vendor/lib64/vendor.samsung.hardware.radio@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
-vendor/lib64/vendor.samsung.hardware.radio@2.1.so
-vendor/lib64/vendor.samsung.hardware.radio@2.2.so
 vendor/lib64/vendor.samsung.hardware.radio@2.2.so
 
 # Seccomp
