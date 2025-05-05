@@ -3519,24 +3519,24 @@
         <path name="main-sub-mic" />
         <ctl name="TX_DEC0 Volume" value="104" />
         <ctl name="TX_DEC1 Volume" value="104" />
-        <ctl name="ADC1 Volume" value="0" />
-        <ctl name="ADC3 Volume" value="0" />
+        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC3 Volume" value="10" />
     </path>
 
     <path name="voip-comm-speaker-mic">
         <path name="main-sub-mic" />
         <ctl name="TX_DEC0 Volume" value="104" />
         <ctl name="TX_DEC1 Volume" value="104" />
-        <ctl name="ADC1 Volume" value="0" />
-        <ctl name="ADC3 Volume" value="0" />
+        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC3 Volume" value="10" />
     </path>
 
     <path name="voip-comm-dual-speaker-mic">
         <path name="main-sub-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
         <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="ADC1 Volume" value="0" />
-        <ctl name="ADC3 Volume" value="0" />
+        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC3 Volume" value="10" />
     </path>
 
     <path name="voip-comm-dex-speaker-mic">
@@ -3554,19 +3554,19 @@
     <path name="voip-comm-headphone-mic">
         <path name="main-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
-        <ctl name="ADC1 Volume" value="0" />
+        <ctl name="ADC1 Volume" value="10" />
     </path>
 
     <path name="voip-comm-headset-mic">
         <path name="ear-mic" />
         <ctl name="TX_DEC0 Volume" value="110" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="ADC2 Volume" value="10" />
     </path>
 
     <path name="voip-comm-usb-headphone-mic">
         <path name="main-mic" />
         <ctl name="TX_DEC0 Volume" value="84" />
-        <ctl name="ADC1 Volume" value="0" />
+        <ctl name="ADC1 Volume" value="10" />
     </path>
 
     <path name="voip-comm-usb-headset-mic">
@@ -4260,6 +4260,8 @@
 
     <path name="voice-rec-mic">
         <path name="main-mic" />
+        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC3 Volume" value="10" />
     </path>
 
     <path name="voice-headphones">
