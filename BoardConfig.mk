@@ -124,7 +124,7 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Vendor security patch
-VENDOR_SECURITY_PATCH := 2024-05-01
+VENDOR_SECURITY_PATCH := 2025-05-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
