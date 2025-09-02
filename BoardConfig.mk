@@ -55,7 +55,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_KERNEL_SOURCE := kernel/samsung/gta4xlve
-TARGET_KERNEL_CONFIG := vendor/gta4xlve_eur_open_defconfig
+TARGET_KERNEL_CONFIG := vendor/atoll-perf_defconfig vendor/gta4xlve.config
 
 # Media
 TARGET_USES_ION := true
