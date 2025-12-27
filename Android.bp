@@ -1,6 +1,5 @@
 soong_namespace {
     imports: [
-        "bootable/deprecated-ota",
         "vendor/samsung/gta4xlveu",
     ],
 }
