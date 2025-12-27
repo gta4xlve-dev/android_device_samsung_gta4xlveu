@@ -123,9 +123,9 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/batt_slate_mode)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
-$(call soong_config_set,lineage_health,charging_control_supports_deadline,false)
-$(call soong_config_set,lineage_health,charging_control_supports_toggle,true)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_deadline,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_toggle,true)
 
 # HIDL
 PRODUCT_PACKAGES += \
