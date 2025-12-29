@@ -24,7 +24,6 @@ type sysfs_wifi_writable, sysfs_type, rw_fs_type, fs_type;
 # Data
 type conn_vendor_data_file, file_type, data_file_type;
 type radio_vendor_data_file, file_type, data_file_type;
-type gatekeeper_vendor_data_file, file_type, data_file_type;
 
 # EFS types
 type app_efs_file, file_type;
