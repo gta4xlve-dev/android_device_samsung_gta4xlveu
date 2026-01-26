@@ -10,6 +10,7 @@ ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
+ro.lmk.swap_compression_ratio=2
 
 # Set supported Bluetooth profiles to enabled
 bluetooth.profile.asha.central.enabled=true
