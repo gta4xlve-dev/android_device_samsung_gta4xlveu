@@ -1,3 +1,6 @@
 # This is for randomly generated TEE directories in /efs
 allow tee efs_file:dir { search read write open add_name };
 allow tee efs_file:file { read write open getattr create };
+
+allow tee gatekeeper_vendor_data_file:dir rw_dir_perms;
+allow tee gatekeeper_vendor_data_file:file create_file_perms;
